@@ -1,0 +1,6 @@
+[
+    {"id":1,"date":"Wed Apr 01 2020","startTime":"10:00","presentor":"טמרט","subject":"ספורט","activity":"אימון ביתי","ages":"18-35","requierments":"נעליים","link":"zoom.com"},
+    {"id":2,"date":"Wed Apr 01 2020","startTime":"09:00","presentor":"אופק","subject":"Css","activity":"עיצוב","ages":"15-45","requierments":"vsc","link":"zoom.com"},
+    {"id":3,"date":"Tue Mar 31 2020","startTime":"09:00","presentor":"אופק","subject":"Java","activity":"עיצוב","ages":"15-45","requierments":"vsc","link":"zoom.com"},
+    {"id":4,"date":"Thu Apr 02 2020","startTime":"09:00","presentor":"אופק","subject":"Angular","activity":"עיצוב","ages":"15-45","requierments":"vsc","link":"zoom.com"}
+]
