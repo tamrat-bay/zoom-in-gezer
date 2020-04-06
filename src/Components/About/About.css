@@ -1,0 +1,59 @@
+.About {
+    margin: 5vh auto 0 auto;
+    width: 60%;
+    min-height: 78.2vh;
+    height: 100%;
+}
+.About p{
+    text-align: center;
+    margin: 5px auto;
+    font-size: 1.2rem;
+    line-height: 1.9;
+}
+.About .About_headers{
+    background-color: #ffa60049;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.About .About_headers h1{
+    font-size: 4.05rem;
+    color: darkgoldenrod;
+    letter-spacing: 1.8px;
+    text-shadow: 1px 1px 3px black;
+}
+.About .About_headers h3{
+    font-size: 3.05rem;
+    color: azure;
+}
+
+
+
+/* Media query */
+
+@media only screen and (max-width: 1045px) {
+    .About{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .About{
+        width: 80%;
+    }
+    .About p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+}
+@media only screen and (max-width: 888px) {
+    .About {
+        width: 95%;
+    }
+    .About p {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+}

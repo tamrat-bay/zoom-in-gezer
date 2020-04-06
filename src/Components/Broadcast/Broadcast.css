@@ -1,3 +1,108 @@
-.table-bordered {
-    direction: rtl;
+.Broadcast{
+    width: 90%;
+    margin: 5vh auto 0 auto;
+    overflow: auto;
+    min-height: 78.3vh;
 }
+.Broadcast .table-bordered {
+    direction: rtl;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 4px;
+}
+
+.Broadcast .table td{
+    padding: 1.3rem;
+    vertical-align: top;
+}
+
+.Broadcast .fas{
+    position: absolute;
+    font-size: 2.3em;
+    cursor: pointer;
+    transition: all .3s;
+    color: #ffa5007d;
+    text-shadow: 2px 2px 2px #a37f18;
+}
+.Broadcast .fas:hover{
+    color: orange;
+    transform: scale(1.2);
+   
+}
+.Broadcast .fas:nth-of-type(1){
+    right: 90%;
+    top: 100px;
+}
+.Broadcast .fas:nth-of-type(2){
+    left: 90%;
+    top: 100px;
+}
+
+.Broadcast .table-bordered a{
+    font-weight: 700;
+}
+
+.Broadcast .disabledLink{
+    cursor: default;
+    color: #fe16168c;
+    text-decoration: line-through;
+}
+/* .Broadcast .disabledLink a{
+    cursor: default;
+} */
+
+.Broadcast .activeLink {
+   color: rgb(107, 154, 203);
+    font-size: 1.1em;
+}
+
+.Broadcast .table thead{
+    background-color: #ffd382b8;
+    border-bottom: 3px solid black;
+}
+.Broadcast .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/* Media Query Starts Here */
+@media only screen and (max-width: 1405px) {
+    .Broadcast .fas {
+        position: absolute;
+        font-size: 1.8em;
+        cursor: pointer;
+        transition: all .3s;
+        color: #ffa5007d;
+        padding: 2px;
+        border-radius: 5px;
+    }
+    .Broadcast .fas:nth-of-type(2) {
+        left: 90%;
+        top: 70px;
+    }
+    .Broadcast .fas:nth-of-type(1) {
+        right: 90%;
+        top: 70px;
+    }
+  }
+
+  @media only screen and (max-width: 710px) {
+    .Broadcast .table td, .table th {
+        padding: 1.25em 5px;
+        font-size: .8em;
+    }
+    .Broadcast .table{
+        width: 95%;
+    }
+    .DaysNav{
+        width: 95%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .Broadcast {
+        width: 95%;
+    }
+  }

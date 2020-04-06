@@ -1,0 +1,28 @@
+.Home_introImg{
+    width: 30%;
+    text-align: center;
+    margin: 20px auto;
+}
+.Home_introImg img{
+  width: 80%;
+}
+.Home{
+  min-height: 83.3vh;
+  height: 100%;
+}
+
+/* Media query */
+@media only screen and (max-width: 670px) {
+.Home_introImg {
+  width: 60%;
+  text-align: center;
+  margin: 20px auto;
+}
+}
+@media only screen and (max-width: 470px) {
+.Home_introImg {
+  width: 75%;
+  text-align: center;
+  margin: 20px auto;
+}
+}

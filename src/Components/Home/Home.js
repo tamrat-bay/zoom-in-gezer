@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import './Home.css'
+import ControlledCarousel from '../ControlledCarousel/ControlledCarousel';
 
 function Home() {
     return (
-        <div>
-            <h1>Home</h1>
-            
+        <div className="Home">
+            <div className="Home_introImg">
+                <img src="./images/zoomgezerFb.png" alt="zoom"/>
+            </div>
+
+            <ControlledCarousel />
         </div>
     )
 }

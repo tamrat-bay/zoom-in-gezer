@@ -1,7 +1,8 @@
 import React from 'react'
 import { Nav } from 'react-bootstrap';
+import './DaysNav.css'
 
-function DaysNav({ day, setDay, displayEventsByDate }) {
+function DaysNav({ day, setDay }) {
 
     const changeDay = (e) => {
         let newDay = Number(e);
@@ -9,26 +10,23 @@ function DaysNav({ day, setDay, displayEventsByDate }) {
     }
    
     return (
-        <Nav className="justify-content-center" style={{ backgroundColor: 'gray' }}>
+        <Nav className="justify-content-center DaysNav">
             <Nav.Item>
                 <Nav.Link
                     onSelect={changeDay}
-                    onClick={displayEventsByDate}
-                    style={{ backgroundColor: day === 2 ? 'white' : '' }}
+                    className={ day === 2 ? 'selectedDay' : '' }
                     eventKey={2}>מחר</Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link
                     onSelect={changeDay}
-                    style={{ backgroundColor: day === 1 ? 'white' : '' }}
-                    onClick={displayEventsByDate}
+                    className={ day === 1 ? 'selectedDay' : '' }
                     eventKey={1}>היום</Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link
                     onSelect={changeDay}
-                    style={{ backgroundColor: day === 0 ? 'white' : '' }}
-                    onClick={displayEventsByDate}
+                    className={ day === 0 ? 'selectedDay' : '' }
                     eventKey={0}>אתמול</Nav.Link>
             </Nav.Item>
             <Nav.Item>
